@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package bidictionary;
+package TTSDictionary;
 
 /**
  * Date Last Modified: Wednesday, May 04, 2016

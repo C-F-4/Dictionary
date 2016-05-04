@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package bidictionary;
+package TTSDictionary;
 
 import java.util.ArrayList;
 

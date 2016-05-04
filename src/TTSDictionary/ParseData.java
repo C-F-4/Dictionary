@@ -1,6 +1,6 @@
 
 
-package bidictionary;
+package TTSDictionary;
 
 import java.io.*;
 import java.util.ArrayList;
