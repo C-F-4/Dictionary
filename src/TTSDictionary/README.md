@@ -1,5 +1,6 @@
 # java_dic
 Java based Desktop(GUI) application with TTS(FreeTTS)
+  -- http://c-f-4.github.io/Dictionary
 
 
 > Does use Internet for the background image.
