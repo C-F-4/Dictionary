@@ -14,7 +14,7 @@ public class ParseData extends Thread{
     private final ArrayList<Word> wordList;
     private ArrayList<Word> _wordList;
     private final File file;
-    
+    private static int count = 0;
     ParseData(File _file){
         this.file = _file;
         wordList = new ArrayList<>();
@@ -33,6 +33,7 @@ public class ParseData extends Thread{
         String[] part = _line.split(" ", 2);
         Word aWord = new Word(part[0],part[1]);
         // System.out.println(aWord.getWord() + " : " + aWord.getMind());
+        count++;
         wordList.add(aWord);
     }
     public void parseList() throws IOException{
@@ -58,7 +59,7 @@ public class ParseData extends Thread{
             System.out.println("File Error");
         }
         // close the file
-       System.out.println("Reading complete");
+       System.out.println("Word Read: " + count + "\nReading complete");
     }
     /***********************************
      * Getters functions in ParseData **

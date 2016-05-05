@@ -6,9 +6,10 @@
 package TTSDictionary;
 
 import com.sun.speech.freetts.*;
-import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+// import java.io.IOException;
 /**
  * Date Last Modified : Wednesday, May 04, 2016
  * @author XXL
@@ -37,7 +38,7 @@ public class SpeechSynthesizer extends Thread {
     public void speech_synthesizer(){
         Voice voice;
         VoiceManager vm = VoiceManager.getInstance();
-        voice = vm.getVoice("mbrola_us1");
+        voice = vm.getVoice("mbrola_us2");
         
         voice.allocate();
         
