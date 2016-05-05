@@ -15,24 +15,25 @@ import java.util.logging.Logger;
  * @author XXL
  */
 public class SpeechSynthesizer extends Thread {
-    Word _w;
-    String _speech_text;
-    Word _empty;              // Used In case there's no word selected
+    private Word w;
+    private String _speech_text;
+    private Word _empty;              // Used In case there's no word selected
                               // Instead an extra __emptyword__-meanin'(error) pair can be added at the top of the azdictor file 
     
     /**********************************************************************
      * Update _speech_text - Line:33 to change format in which TTS speaks**
      * ********************************************************************/
     
-    SpeechSynthesizer(Word w){
+    SpeechSynthesizer(Word _w){
         System.setProperty("mbrola.base", "C:/Users/XXL/Documents/mbrola");
-        if (w.getMind() == null ){ 
-            _w = _empty; 
+        if (_w.getMind() == null || _w.getWord() == "" ){ 
+            w = _empty; 
+            System.out.println("Word is empty");
         }
         else {
-            _w = w;
+            w = _w;
         }
-        _speech_text = /*w.getWord() + "means" + */w.getMind();
+        _speech_text = /*w.getWord() + "means" + */_w.getMind();
     }
     
     public void speech_synthesizer(){

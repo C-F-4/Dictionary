@@ -308,9 +308,9 @@ public class mainFrame extends javax.swing.JFrame{
         change_status("reading the word");
         speech = new SpeechSynthesizer(w);
         speech.start();
+            change_status("Voice Synthesizer running");
     //    /*if(speech.isAlive())*/{ speech.interrupt(); }
         try{
-            change_status("Voice Synthesizer running");
             speech.join();
         }
         catch(InterruptedException ex) {
