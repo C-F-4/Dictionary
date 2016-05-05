@@ -39,6 +39,7 @@ public class SpeechSynthesizer extends Thread {
     public void speech_synthesizer(){
         Voice voice;
         VoiceManager vm = VoiceManager.getInstance();
+        Voice[] voicelist = vm.getVoices();
         voice = vm.getVoice("mbrola_us2");
         
         voice.allocate();
@@ -48,6 +49,8 @@ public class SpeechSynthesizer extends Thread {
         }catch(Exception e){
             Logger.getLogger(TTSDictionary.class.getName()).log(Level.SEVERE, null, e);
         }
+        
+        voice.deallocate();
     }
     @Override
     public void run() {
