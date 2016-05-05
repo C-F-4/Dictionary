@@ -17,6 +17,7 @@ import java.awt.event.*;
 import java.awt.image.BufferedImage;
 import java.awt.event.KeyEvent;
 /*
+import javax.swing.JOptionPane;
 import java.net.URL;
 import javax.imageio.ImageIO;
 import java.awt.event.*;
@@ -52,6 +53,7 @@ public class mainFrame extends javax.swing.JFrame{
     private BufferedImage img;
     private static DefaultListModel  listdata;
     private static ArrayList<Word> lw;
+    private String[] _args;
     SpeechSynthesizer speech;
     Word w;
     
@@ -140,15 +142,14 @@ public class mainFrame extends javax.swing.JFrame{
         jButton1 = new javax.swing.JButton(II);
         jLabelStatus = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("BiDictionary");
         setBackground(new java.awt.Color(243, 198, 0));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setForeground(new java.awt.Color(0, 255, 255));
-        setMinimumSize(new java.awt.Dimension(800, 525));
+        setMinimumSize(new java.awt.Dimension(800, 510));
+        setPreferredSize(new java.awt.Dimension(800, 510));
         addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 formKeyPressed(evt);
@@ -242,25 +243,16 @@ public class mainFrame extends javax.swing.JFrame{
         jLabelStatus.setMinimumSize(new java.awt.Dimension(6, 6));
         jLabelStatus.setPreferredSize(new java.awt.Dimension(24, 24));
         getContentPane().add(jLabelStatus);
-        jLabelStatus.setBounds(12, 440, 750, 30);
+        jLabelStatus.setBounds(12, 440, 750, 20);
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/TTSDictionary/bg.gif"))); // NOI18N
         jLabel1.setText("jLabel1");
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabel1.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
+        jLabel1.setMinimumSize(new java.awt.Dimension(968, 550));
         getContentPane().add(jLabel1);
         jLabel1.setBounds(0, 3, 780, 480);
-
-        jMenu1.setText("About");
-        jMenu1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenu1ActionPerformed(evt);
-            }
-        });
-        jMenuBar1.add(jMenu1);
-
-        setJMenuBar(jMenuBar1);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -368,11 +360,6 @@ public class mainFrame extends javax.swing.JFrame{
         }
     */
     }//GEN-LAST:event_formKeyPressed
-
-    private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
-        // TODO add your handling code here:
-        exitWin();
-    }//GEN-LAST:event_jMenu1ActionPerformed
     
     
     /**
@@ -424,8 +411,6 @@ public class mainFrame extends javax.swing.JFrame{
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabelStatus;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JList lstWord;
