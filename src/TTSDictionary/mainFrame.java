@@ -13,11 +13,12 @@ import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
 import javax.swing.ImageIcon;
 import java.awt.*;
+import java.awt.event.*;
 import java.awt.image.BufferedImage;
-import java.net.URL;
-import javax.imageio.ImageIO;
 import java.awt.event.KeyEvent;
 /*
+import java.net.URL;
+import javax.imageio.ImageIO;
 import java.awt.event.*;
 import javax.swing.JDesktopPane;
 import javax.swing.JFrame;
@@ -53,6 +54,11 @@ public class mainFrame extends javax.swing.JFrame{
     private static ArrayList<Word> lw;
     SpeechSynthesizer speech;
     Word w;
+    
+    public void exitWin(){
+        WindowEvent winClosingEvent = new WindowEvent(this, WindowEvent.WINDOW_CLOSING);
+        Toolkit.getDefaultToolkit().getSystemEventQueue().postEvent(winClosingEvent);
+    }
     
     public void change_status(String s){
         jLabelStatus.setText("<html><head></head><body style='font-color: red;'>" + s + "</body></html>");
@@ -365,6 +371,7 @@ public class mainFrame extends javax.swing.JFrame{
 
     private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
         // TODO add your handling code here:
+        exitWin();
     }//GEN-LAST:event_jMenu1ActionPerformed
     
     
