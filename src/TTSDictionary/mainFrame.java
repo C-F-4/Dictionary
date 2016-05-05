@@ -148,8 +148,10 @@ public class mainFrame extends javax.swing.JFrame{
         setBackground(new java.awt.Color(243, 198, 0));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setForeground(new java.awt.Color(0, 255, 255));
-        setMinimumSize(new java.awt.Dimension(800, 510));
-        setPreferredSize(new java.awt.Dimension(800, 510));
+        setMaximumSize(new java.awt.Dimension(800, 550));
+        setMinimumSize(new java.awt.Dimension(800, 550));
+        setPreferredSize(new java.awt.Dimension(800, 550));
+        setResizable(false);
         addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 formKeyPressed(evt);
@@ -179,7 +181,7 @@ public class mainFrame extends javax.swing.JFrame{
             }
         });
         getContentPane().add(txtWord);
-        txtWord.setBounds(10, 10, 630, 30);
+        txtWord.setBounds(10, 10, 650, 30);
 
         lstWord.setBackground(new java.awt.Color(204, 204, 204));
         lstWord.setFont(new java.awt.Font("DejaVu Serif Condensed", 0, 14)); // NOI18N
@@ -193,7 +195,7 @@ public class mainFrame extends javax.swing.JFrame{
         jScrollPane1.setViewportView(lstWord);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(10, 51, 200, 390);
+        jScrollPane1.setBounds(10, 51, 200, 440);
 
         jScrollPane2.setBackground(new java.awt.Color(197, 194, 189));
 
@@ -210,7 +212,7 @@ public class mainFrame extends javax.swing.JFrame{
         txtMeaning.getAccessibleContext().setAccessibleName("");
 
         getContentPane().add(jScrollPane2);
-        jScrollPane2.setBounds(220, 50, 540, 390);
+        jScrollPane2.setBounds(220, 50, 570, 440);
 
         jButton1.setBackground(new java.awt.Color(0, 0, 0));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
@@ -234,7 +236,7 @@ public class mainFrame extends javax.swing.JFrame{
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(650, 10, 110, 30);
+        jButton1.setBounds(670, 10, 120, 30);
 
         jLabelStatus.setForeground(new java.awt.Color(250, 0, 0));
         jLabelStatus.setText("Welcome to Dictionary Application - Written By XXL");
@@ -243,16 +245,17 @@ public class mainFrame extends javax.swing.JFrame{
         jLabelStatus.setMinimumSize(new java.awt.Dimension(6, 6));
         jLabelStatus.setPreferredSize(new java.awt.Dimension(24, 24));
         getContentPane().add(jLabelStatus);
-        jLabelStatus.setBounds(12, 440, 750, 20);
+        jLabelStatus.setBounds(10, 490, 750, 20);
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/TTSDictionary/bg.gif"))); // NOI18N
         jLabel1.setText("jLabel1");
         jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jLabel1.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
-        jLabel1.setMinimumSize(new java.awt.Dimension(968, 550));
+        jLabel1.setMaximumSize(new java.awt.Dimension(800, 550));
+        jLabel1.setMinimumSize(new java.awt.Dimension(800, 550));
+        jLabel1.setPreferredSize(new java.awt.Dimension(800, 550));
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 3, 780, 480);
+        jLabel1.setBounds(0, 3, 800, 550);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
