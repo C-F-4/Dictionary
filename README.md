@@ -20,7 +20,7 @@ Should work on All Desktops (Windows & Linux). GUI may differ.
 * Make sure your mbrola and FreeTTS(steps are below) libraries are installed with the project or it'll give Run Time Error.
 * Then Build and Run the Project, it should open up a window like this: 
   ![BiDictionary ScreenShot](https://i.imgur.com/WfZgag2.png "ScreenShot")
-* Try Searching for a word like "dictionary" and click on the "Speaker" icon to start the Speech Synthesis.
+* Try Searching for a word like "Zythum" and click on the "Speaker" icon to start the Speech Synthesis.
 
 ### How to add FreeTTS libraries to your Project:
 * Download FreeTTS 1.2.2 zip file from [here](https://sourceforge.net/projects/freetts/files/FreeTTS/FreeTTS%201.2.2/freetts-1.2.2-bin.zip/download)
