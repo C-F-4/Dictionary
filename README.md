@@ -25,11 +25,26 @@ It should work on All Desktops (Windows & Linux). GUI may differ.
 ### How to add FreeTTS libraries to your Project:
 * Download FreeTTS 1.2.2 zip file from [here](https://sourceforge.net/projects/freetts/files/FreeTTS/FreeTTS%201.2.2/freetts-1.2.2-bin.zip/download)
 * Extract freetts-1.2/lib folder from freetts-1.2.2-bin.zip in a temp directory
+  * cmu_time_awb.jar
+  * cmu_us_kal.jar
+  * cmudict04.jar
+  * cmulex.jar
+  * cmutimelex.jar
+  * en_us.jar
+  * freetts.jar
+  * freetts-jsapi10.jar
+  * mbrola.jar
 * When you add your Project Folder to NetBeans, it'll ask you to resolve Library error. Click on "Resolve".
 * Click on "Add New Library", name it "FreeTTS", click Ok.
 * It should probably say Resolved now. Click Close.
 
-If FreeTTS library is not being addded properly to your project then just Google for "How to add custom libraries to Netbeans/ Eclipse Project"
+** You are bound to have errors if you're using OpenJDK, here's a guide to resolve those by installing [Sun JDK on Linux](http://www.devsniper.com/ubuntu-12-04-install-sun-jdk-6-7/)
+
+If FreeTTS library is not being added properly to your project then just Google for "How to add custom libraries to Netbeans/ Eclipse Project".
+
+If you still are experiencing issues with FreeTTS or mbrola, then try checking out these links:
+* [Windows Guide](http://stackoverflow.com/questions/26236562/mbrola-voices-with-freetts-windows)
+* [Linux Ubuntu Guide](http://stackoverflow.com/q/5501394/5346439)
 
 ### How to configure mbrola for FreeTTS:
 * [Follow these steps](http://freetts.sourceforge.net/mbrola/README.html)
