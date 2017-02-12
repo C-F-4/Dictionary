@@ -38,6 +38,9 @@ It should work on All Desktops with Java(Windows & Linux). GUI may differ.
 * Click on "Add New Library", name it "FreeTTS", click Ok.
 * It should probably say Resolved now. Click Close.
 
+### How to configure mbrola for FreeTTS:
+* [Follow these steps](http://freetts.sourceforge.net/mbrola/README.html)
+
 ** You are bound to have errors if you're using OpenJDK, here's a guide to resolve those by installing [Sun JDK on Linux](http://www.devsniper.com/ubuntu-12-04-install-sun-jdk-6-7/)
 
 If FreeTTS library is not being added properly to your project then just Google for "How to add custom libraries to Netbeans/ Eclipse Project".
@@ -45,9 +48,6 @@ If FreeTTS library is not being added properly to your project then just Google 
 If you still are experiencing issues with FreeTTS or mbrola, then try checking out these links:
 * [Windows Guide](http://stackoverflow.com/questions/26236562/mbrola-voices-with-freetts-windows)
 * [Linux Ubuntu Guide](http://stackoverflow.com/q/5501394/5346439)
-
-### How to configure mbrola for FreeTTS:
-* [Follow these steps](http://freetts.sourceforge.net/mbrola/README.html)
 
 ### YouTube Presentational Video
 [![Alt text for your video](https://i.ytimg.com/vi/o8PURZvvyvk/maxresdefault.jpg)](https://youtu.be/o8PURZvvyvk)
