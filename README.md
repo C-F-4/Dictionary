@@ -1,15 +1,17 @@
 # TTS based Dictionary
-A Desktop Disctionary Application created using Java Programming Language
+A Desktop Disctionary Application created using Java Programming Language with GUI Support
 
 ### Platform Support: 
-Successfully Tested on: Windows 7 (x64)
-Should eaasily work on all the Windows Platforms
+Successfully Tested and run on: Windows 7 (x64)
+(Should easily work on all the Windows Platforms 7+)
 
-### Pre-Installed Softwares Required:
-* mbrola(with configured voices)
+### Before Running this Source Code, follow these steps:
+* [Follow this guide: mbrola(with configured voices)](http://freetts.sourceforge.net/mbrola/README.html)
+* [Download FreeTTS here](https://sourceforge.net/projects/freetts/files/FreeTTS/FreeTTS%201.2.2/)
 
-### Guide to Run the Project on Windows
-* Download the Source Code using zip file(extract it) or fork the project or open it in desktop app(if you've GitHub for Desktop).
+### Guide to Run the Project on Windows NetBeans
+* Download the Source Code:
+  * Either click Clone
 * Now open your IDE and "Open Project" and select the Project folder named "Dictionary".
    It'd best if you can open the project folder using NetBeans as the project was built using NetBeans and follows the folder structure
   Or you can follow these steps to [run on Eclipse](http://stackoverflow.com/questions/21535023/how-to-get-your-netbeans-project-into-eclipse)
