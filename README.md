@@ -29,7 +29,7 @@ Should work on All Desktops (Windows & Linux). GUI may differ.
 * Click on "Add New Library", name it "FreeTTS", click Ok.
 * It should probably say Resolved now. Click Close.
 
-If FreeTTS library is not being addded properly to your project then just Google for "How to add custom libraries to Netbeans Project"
+If FreeTTS library is not being addded properly to your project then just Google for "How to add custom libraries to Netbeans/ Eclipse Project"
 
 ### How to configure mbrola for FreeTTS:
 * [Follow these steps](http://freetts.sourceforge.net/mbrola/README.html)
