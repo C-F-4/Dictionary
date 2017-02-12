@@ -1,9 +1,8 @@
 # TTS based Dictionary
-A Desktop Disctionary Application created using Java Programming Language with GUI Support
+A Desktop Dictionary Application created using Java Programming Language with GUI Support
 
 ### Platform Support: 
-Successfully Tested and run on: Windows 7 (x64)
-(Should easily work on all the Windows Platforms 7+)
+Should work on All Desktops (Windows & Linux). GUI may differ.
 
 ### Before Building this Source Code, follow these steps:
 * [Follow this guide: mbrola(with configured voices)](http://freetts.sourceforge.net/mbrola/README.html)
