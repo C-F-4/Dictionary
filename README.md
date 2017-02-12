@@ -5,9 +5,9 @@ A Desktop Disctionary Application created using Java Programming Language with G
 Successfully Tested and run on: Windows 7 (x64)
 (Should easily work on all the Windows Platforms 7+)
 
-### Before Running this Source Code, follow these steps:
+### Before Building this Source Code, follow these steps:
 * [Follow this guide: mbrola(with configured voices)](http://freetts.sourceforge.net/mbrola/README.html)
-* [Download FreeTTS here](https://sourceforge.net/projects/freetts/files/FreeTTS/FreeTTS%201.2.2/)
+* [Download FreeTTS here](https://sourceforge.net/projects/freetts/files/FreeTTS/FreeTTS%201.2.2/) and follow below steps to add the libraries to your project.
 
 ### Guide to Run the Project on Windows NetBeans
 * Download the Source Code using one of these steps:
