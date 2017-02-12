@@ -1,4 +1,4 @@
-# TTS based Dictionary
+# TTS Dictionary
 An Open-Source Desktop Dictionary Application created using Java Programming Language with GUI Support
 
 ### Platform Support: 
