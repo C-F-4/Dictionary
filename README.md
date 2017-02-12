@@ -2,7 +2,7 @@
 An Open-Source Desktop Dictionary Application created using Java Programming Language with GUI Support
 
 ### Platform Support: 
-It should work on All Desktops (Windows & Linux). GUI may differ.
+It should work on All Desktops with Java(Windows & Linux). GUI may differ.
 
 ### Build Dependencies:
 * [mbrola](http://tcts.fpms.ac.be/synthesis/mbrola.html)
