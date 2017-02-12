@@ -17,12 +17,18 @@ Should work on All Desktops (Windows & Linux). GUI may differ.
 * Now open IDE of your preference and "Open Project" and select the Project folder named "Dictionary".
   It'd best if you're using NetBeans as the project was built using NetBeans and follows it's folder structure and this tutorial also currently give detailed steps for NetBeans.
   Or you can follow these steps to [run on Eclipse](http://stackoverflow.com/questions/21535023/how-to-get-your-netbeans-project-into-eclipse)
-* Make sure your mbrola and FreeTTS(steps are below) libraries are installed with the project or it'll give an error.
+* Make sure your mbrola and FreeTTS(steps are below) libraries are installed with the project or it'll give Run Time Error.
 * Then Build and Run the Project, it should open up a window like this: 
-* Try Searching for a word like "dictionary" and click on the "Speaker" icon to start the Speec Synthesis.
+* Try Searching for a word like "dictionary" and click on the "Speaker" icon to start the Speech Synthesis.
 
 ### How to add FreeTTS libraries to your Project:
+* Download FreeTTS 1.2.2 zip file from [here](https://sourceforge.net/projects/freetts/files/FreeTTS/FreeTTS%201.2.2/freetts-1.2.2-bin.zip/download)
+* Extract freetts-1.2/lib folder from freetts-1.2.2-bin.zip in a temp directory
+* When you add your Project Folder to NetBeans, it'll ask you to resolve Library error. Click on "Resolve".
+* Click on "Add New Library", name it "FreeTTS", click Ok.
+* It should probably say Resolved now. Click Close.
 
+If FreeTTS library is not being addded properly to your project then just Google for "How to add custom libraries to Netbeans Project"
 
 ### How to configure mbrola for FreeTTS:
 * [Follow these steps](http://freetts.sourceforge.net/mbrola/README.html)
