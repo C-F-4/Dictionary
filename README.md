@@ -1,5 +1,5 @@
 # TTS based Dictionary
-A Desktop Dictionary Application created using Java Programming Language with GUI Support
+An Open-Source Desktop Dictionary Application created using Java Programming Language with GUI Support
 
 ### Platform Support: 
 Should work on All Desktops (Windows & Linux). GUI may differ.
