@@ -4,9 +4,9 @@ A Desktop Dictionary Application created using Java Programming Language with GU
 ### Platform Support: 
 Should work on All Desktops (Windows & Linux). GUI may differ.
 
-### Before Building this Source Code, follow these steps:
-* [Follow this guide: mbrola(with configured voices)](http://freetts.sourceforge.net/mbrola/README.html)
-* [Download FreeTTS here](https://sourceforge.net/projects/freetts/files/FreeTTS/FreeTTS%201.2.2/) and follow below steps to add the libraries to your project.
+### Build Dependencies:
+* [mbrola](http://tcts.fpms.ac.be/synthesis/mbrola.html)
+* [FreeTTS](http://freetts.sourceforge.net/docs/index.php)
 
 ### Guide to Run the Project on Windows NetBeans
 * Download the Source Code using one of these steps:
@@ -21,8 +21,11 @@ Should work on All Desktops (Windows & Linux). GUI may differ.
 * Then Build and Run the Project, it should open up a window like this: 
 * Try Searching for a word like "dictionary" and click on the "Speaker" icon to start the Speec Synthesis.
 
-### How to add Free TTS to your Project:
-* 
+### How to add FreeTTS libraries to your Project:
+
+
+### How to configure mbrola for FreeTTS:
+* [Follow these steps](http://freetts.sourceforge.net/mbrola/README.html)
 
 ### YouTube Presentational Video
 [![Alt text for your video](https://i.ytimg.com/vi/o8PURZvvyvk/maxresdefault.jpg)](https://youtu.be/o8PURZvvyvk)
