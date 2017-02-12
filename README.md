@@ -19,6 +19,7 @@ Should work on All Desktops (Windows & Linux). GUI may differ.
   Or you can follow these steps to [run on Eclipse](http://stackoverflow.com/questions/21535023/how-to-get-your-netbeans-project-into-eclipse)
 * Make sure your mbrola and FreeTTS(steps are below) libraries are installed with the project or it'll give Run Time Error.
 * Then Build and Run the Project, it should open up a window like this: 
+  ![BiDictionary ScreenShot](https://i.imgur.com/WfZgag2.png "ScreenShot")
 * Try Searching for a word like "dictionary" and click on the "Speaker" icon to start the Speech Synthesis.
 
 ### How to add FreeTTS libraries to your Project:
