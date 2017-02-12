@@ -36,3 +36,21 @@ If FreeTTS library is not being addded properly to your project then just Google
 
 ### YouTube Presentational Video
 [![Alt text for your video](https://i.ytimg.com/vi/o8PURZvvyvk/maxresdefault.jpg)](https://youtu.be/o8PURZvvyvk)
+
+### Development:
+You should find it easiest to understand as the class/ file names are self-explanatory to what they do. 
+One Class per File is the design approach at it's core.
+
+### Want to Contribute, here is the to-do list:
+* Currently it reads from the file names "azdictor.txt". The better approach would be to read from a local Database as it'd be easy-to-modify by the user.
+  Create a local database and modify ParseData.java to read from the Database.
+  
+* Add a way to add/ update/ delete the terms by the user locally.
+
+* Improve the comment quality. Cross-verify either through the IDE or using JavaDocs.
+
+* Easier way to modify the configuration using a .config file. Currently It's hard-coded like the file name or the mbrola properties.
+
+* Logger needs to be implemented through out the application to generate a log and error file separately on the client PC. It'd be easier to debug using Log/ Error files.
+
+* Finally Generate a .exe, pack it with the custom FreeTTS libraries and mbrola voices, and make the package installer.
