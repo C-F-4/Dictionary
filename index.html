@@ -49,7 +49,7 @@
           </h3>
           <p>
             <ul>
-              <li> Download the Source Code using one of these steps:
+              <li> Download the Source Code using one of these steps
                 <ul>
                   <li> Click Clone or Download </li>
                   <li> Then Open in Desktop (if you've GitHub for Desktop) </li>
@@ -71,11 +71,9 @@
             <a id="freetts-installation" class="anchor" href="#freetts-installation" aria-hidden="true">
               <span aria-hidden="true" class="octicon octicon-link"></span>
             </a>
-            Creating pages manually
+            How to add FreeTTS libraries to your Project
           </h3>
-
           <p>
-            How to add FreeTTS libraries to your Project:
             <ul>
               <li> Download FreeTTS 1.2.2 zip file from [here](https://sourceforge.net/projects/freetts/files/FreeTTS/FreeTTS%201.2.2/freetts-1.2.2-bin.zip/download) </li>
               <li> Extract freetts-1.2/lib folder from freetts-1.2.2-bin.zip in a temp directory 
@@ -95,6 +93,60 @@
               <li> Click on "Add New Library", name it "FreeTTS", click Ok. </li>
               <li> It should probably say Resolved now. Click Close. </li>
             </ul>
+          </p>
+
+          <h3>
+            <a id="mbrola-installation" class="anchor" href="#mbrola-installation" aria-hidden="true">
+              <span aria-hidden="true" class="octicon octicon-link"></span>
+            </a>
+            How to configure mbrola for FreeTTS:
+          </h3>
+          <p>
+            <ul>
+              <li>[Follow these steps](http://freetts.sourceforge.net/mbrola/README.html)</li>
+            </ul>
+          </p>
+
+          <h3>
+            <a id="installation-issues" class="anchor" href="#installation-issues" aria-hidden="true">
+              <span aria-hidden="true" class="octicon octicon-link"></span>
+            </a>
+            Installation Errors caused by mbrola, FreeTTS or OpenJDK
+          </h3>
+          <p>
+            <ul>
+              <li> You are bound to have errors if you're using OpenJDK, here's a guide to resolve those by installing [Sun JDK on Linux](http://www.devsniper.com/ubuntu-12-04-install-sun-jdk-6-7/) </li>
+              <li> If FreeTTS library is not being added properly to your project then just Google for "How to add custom libraries to Netbeans/ Eclipse Project". </li>
+              <li> If you still are experiencing issues with FreeTTS or mbrola, then try checking out these links:
+                <ul>
+                  <li> [Windows Guide](http://stackoverflow.com/questions/26236562/mbrola-voices-with-freetts-windows) </li>
+                  <li> [Linux Ubuntu Guide](http://stackoverflow.com/q/5501394/5346439) </li>
+                </ul>
+              </li>
+            </ul>
+          </p>
+
+          <h3>
+            <a id="installation-issues" class="anchor" href="#installation-issues" aria-hidden="true">
+              <span aria-hidden="true" class="octicon octicon-link"></span>
+            </a>
+            Development & Contribution
+          </h3>
+          <p>
+            You should find it easiest to understand as the class/ file names are self-explanatory to what they do. One Class per File is the design approach at it's core.
+            <ul>
+              <li> 
+                Currently it reads from the file names "azdictor.txt". The better approach would be to read from a local Database as it'd be easy-to-modify by the user.
+                Create a local database and modify ParseData.java to read from the Database. 
+              </li>
+              <li> Add a way to add/ update/ delete the terms by the user locally. </li>
+              <li> Improve the comment quality. Cross-verify either through the IDE or using JavaDocs. </li>
+              <li> Easier way to modify the configuration using a .config file. Currently It's hard-coded like the file name or the mbrola properties. </li>
+              <li> 
+                Logger needs to be implemented through out the application to generate a log and error file separately on the client PC. 
+                It'd be easier to debug using Log/ Error files. 
+              </li>
+              <li> Finally Generate a .exe, pack it with the custom FreeTTS libraries and mbrola voices, and make the package installer. </li>
           </p>
 
 <h3>
