@@ -20,7 +20,7 @@
     <header>
       <div class="inner">
         <h1>Dictionary</h1>
-        <h2>TTS based Dictionary</h2>
+        <h2>An Open-Source TTS Dictionary with GUI Support</h2>
         <a href="https://github.com/C-F-4/Dictionary" class="button"><small>View project on</small> GitHub</a>
       </div>
     </header>
@@ -29,19 +29,73 @@
       <div class="inner clearfix">
         <section id="main-content">
           <h3>
-<a id="welcome-to-dictionary-text-to-speech-dictionary-en" class="anchor" href="#welcome-to-dictionary-text-to-speech-dictionary-en" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to Dictionary (Text-To-Speech Dictionary (EN))</h3>
+            <a id="build-dep" class="anchor" href="#build-dep" aria-hidden="true">
+              <span aria-hidden="true" class="octicon octicon-link"></span>
+            </a>
+            Build Dependencies:
+          </h3>
+          <p>
+            <ul>
+              <li> <a class="anchor" href="http://tcts.fpms.ac.be/synthesis/mbrola.html"> mbrola </a> </li>
+              <li> <a class="anchor" href="http://freetts.sourceforge.net/docs/index.php"> FreeTTS </a> </li>
+            </ul>
+          </p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+          <h3>
+            <a id="build-run" class="anchor" href="#build-run" aria-hidden="true">
+              <span aria-hidden="true" class="octicon octicon-link"></span>
+            </a>
+            Guide to Run the Project on Windows NetBeans
+          </h3>
+          <p>
+            <ul>
+              <li> Download the Source Code using one of these steps:
+                <ul>
+                  <li> Click Clone or Download </li>
+                  <li> Then Open in Desktop (if you've GitHub for Desktop) </li>
+                  <li> Download ZIP and extract the Dictionary folder to a working directory. </li>
+                  <li> Click Fork (well if you're a Git Pro you have already done that). </li>
+                </ul>
+              </li>
+              <li> Now open IDE of your preference and "Open Project" and select the Project folder named "Dictionary". </li>
+              <li> It'd best if you're using NetBeans as the project was built using NetBeans and follows it's folder structure and this tutorial also currently give detailed steps for NetBeans.<br/>
+                   Or you can follow these steps to [run on Eclipse](http://stackoverflow.com/questions/21535023/how-to-get-your-netbeans-project-into-eclipse) </li>
+              <li> Make sure your mbrola and FreeTTS(steps are below) libraries are installed with the project or it'll give Run Time Error. </li>
+              <li> Then Build and Run the Project, it should open up a window like this: 
+                <img href="https://i.imgur.com/WfZgag2.png" alt="BiDictionary ScreenShot" /> </li>
+              <li> Try Searching for a word like "Zythum" and click on the "Speaker" icon to start the Speech Synthesis. </li>
+            </ul>
+          </p>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+          <h3>
+            <a id="freetts-installation" class="anchor" href="#freetts-installation" aria-hidden="true">
+              <span aria-hidden="true" class="octicon octicon-link"></span>
+            </a>
+            Creating pages manually
+          </h3>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
-
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+          <p>
+            How to add FreeTTS libraries to your Project:
+            <ul>
+              <li> Download FreeTTS 1.2.2 zip file from [here](https://sourceforge.net/projects/freetts/files/FreeTTS/FreeTTS%201.2.2/freetts-1.2.2-bin.zip/download) </li>
+              <li> Extract freetts-1.2/lib folder from freetts-1.2.2-bin.zip in a temp directory 
+                <ul>
+                  <li> cmu_time_awb.jar </li>
+                  <li> cmu_us_kal.jar </li>
+                  <li> cmudict04.jar </li>
+                  <li> cmulex.jar </li>
+                  <li> cmutimelex.jar </li>
+                  <li> en_us.jar </li>
+                  <li> freetts.jar </li>
+                  <li> freetts-jsapi10.jar </li>
+                  <li> mbrola.jar </li>
+                </ul>
+              </li>
+              <li> When you add your Project Folder to NetBeans, it'll ask you to resolve Library error. Click on "Resolve". </li>
+              <li> Click on "Add New Library", name it "FreeTTS", click Ok. </li>
+              <li> It should probably say Resolved now. Click Close. </li>
+            </ul>
+          </p>
 
 <h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
